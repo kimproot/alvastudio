@@ -16,21 +16,21 @@
       logo: '', poster: '', feed: '', undangan: '', kemasan: '', kartu: ''
     },
     images: {
-      hero: 'assets/images/photo-01.jpg',
-      about: 'assets/images/photo-02.jpg',
-      p1: 'assets/images/photo-01.jpg',
-      p2: 'assets/images/photo-02.jpg',
-      p3: 'assets/images/photo-03.jpg',
-      p4: 'assets/images/photo-04.jpg',
-      p5: 'assets/images/photo-05.jpg',
-      p6: 'assets/images/photo-06.jpg',
-      p7: 'assets/images/photo-07.jpg',
-      p8: 'assets/images/photo-08.jpg',
-      p9: 'assets/images/photo-09.jpg',
-      p10: 'assets/images/photo-01.jpg',
-      p11: 'assets/images/photo-04.jpg',
-      p12: 'assets/images/photo-06.jpg',
-      p13: 'assets/images/photo-09.jpg'
+      hero: 'assets/images/photo-01.jpeg',
+      about: 'assets/images/photo-02.jpeg',
+      p1: 'assets/images/photo-01.jpeg',
+      p2: 'assets/images/photo-02.jpeg',
+      p3: 'assets/images/photo-03.jpeg',
+      p4: 'assets/images/photo-04.jpeg',
+      p5: 'assets/images/photo-05.jpeg',
+      p6: 'assets/images/photo-06.jpeg',
+      p7: 'assets/images/photo-07.jpeg',
+      p8: 'assets/images/photo-08.jpeg',
+      p9: 'assets/images/photo-09.jpeg',
+      p10: 'assets/images/photo-01.jpeg',
+      p11: 'assets/images/photo-04.jpeg',
+      p12: 'assets/images/photo-06.jpeg',
+      p13: 'assets/images/photo-09.jpeg'
     },                      // foto contoh untuk beranda dan portofolio
     testimonials: []                 // contoh: [{ nama: 'Nisa', peran: 'Siswi', teks: 'Hasil fotonya bagus.' }]
   };
@@ -312,15 +312,15 @@
     // Galeri photo strip memakai foto asli dari assets/images, bukan ilustrasi SVG.
     var rh = '';
     var railImages = [
-      ['photo-01.jpg', 'Foto ALVA STUDIO 1'],
-      ['photo-02.jpg', 'Foto ALVA STUDIO 2'],
-      ['photo-03.jpg', 'Foto ALVA STUDIO 3'],
-      ['photo-04.jpg', 'Foto ALVA STUDIO 4'],
-      ['photo-05.jpg', 'Foto ALVA STUDIO 5'],
-      ['photo-06.jpg', 'Foto ALVA STUDIO 6'],
-      ['photo-07.jpg', 'Foto ALVA STUDIO 7'],
-      ['photo-08.jpg', 'Foto ALVA STUDIO 8'],
-      ['photo-09.jpg', 'Foto ALVA STUDIO 9']
+      ['photo-04.jpeg', 'Foto ALVA STUDIO 1'],
+      ['photo-02.jpeg', 'Foto ALVA STUDIO 2'],
+      ['photo-03.jpeg', 'Foto ALVA STUDIO 3'],
+      ['photo-04.jpeg', 'Foto ALVA STUDIO 4'],
+      ['photo-05.jpeg', 'Foto ALVA STUDIO 5'],
+      ['photo-06.jpeg', 'Foto ALVA STUDIO 6'],
+      ['photo-07.jpeg', 'Foto ALVA STUDIO 7'],
+      ['photo-08.jpeg', 'Foto ALVA STUDIO 8'],
+      ['photo-09.jpeg', 'Foto ALVA STUDIO 9']
     ];
     railImages.forEach(function (item) {
       rh += '<figure class="strip"><img src="assets/images/' + item[0] + '" alt="' + item[1] + '" loading="lazy" decoding="async"></figure>';
