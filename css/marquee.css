@@ -1,0 +1,6 @@
+/* Gaya khusus: marquee. */
+.marquee{background:var(--gold);color:var(--forest-950);overflow:hidden}
+.marquee-track{display:flex;width:max-content;animation:slide 34s linear infinite}
+.marquee-group{display:flex;align-items:center;gap:30px;padding:17px 30px 17px 0;white-space:nowrap;font:italic 600 clamp(20px,2.4vw,26px)/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase}
+.sep{width:8px;height:8px;background:var(--forest-950);transform:rotate(45deg);flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}

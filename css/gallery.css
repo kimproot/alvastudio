@@ -1,0 +1,9 @@
+/* Gaya khusus: gallery. */
+.rail-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.rail-btns{display:flex;gap:10px}
+.rail-btns button{width:50px;height:50px;border-radius:50%;border:1px solid var(--forest-900);background:transparent;color:var(--forest-900);font-size:20px;cursor:pointer;transition:all .3s var(--ease)}
+.rail-btns button:hover{background:var(--forest-900);color:var(--paper)}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding-block:18px 34px;margin-top:30px;scrollbar-width:thin;scrollbar-color:var(--forest-700) transparent}
+.rail .strip{flex:0 0 clamp(170px,22vw,220px);margin:0;overflow:hidden;aspect-ratio:4/5;scroll-snap-align:start;border:7px solid var(--paper);background:var(--paper);box-shadow:0 16px 22px rgba(11,61,46,.22);transform:rotate(-1deg)}
+.rail .strip:nth-child(even){transform:rotate(1.5deg)}
+.rail .strip img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}

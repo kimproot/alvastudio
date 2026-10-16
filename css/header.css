@@ -1,0 +1,21 @@
+/* Gaya khusus: header. */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(5,46,34,.0);border-bottom:1px solid transparent;transition:background .4s var(--ease),border-color .4s var(--ease)}
+.site-head.scrolled{background:var(--forest-900);border-bottom-color:var(--line-dark);box-shadow:0 10px 30px rgba(2,18,13,.35)}
+.head-in{display:flex;align-items:center;gap:24px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:40px;height:40px}
+.brand-logo{display:block;width:150px;height:auto;object-fit:contain}
+.brand-text{display:grid;line-height:1}
+.brand-text b{font:600 26px/1 var(--f-display);letter-spacing:.2em}
+.brand-text small{font:600 10px/1 var(--f-body);letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+.nav{margin-left:auto}
+.nav ul{display:flex;gap:26px}
+.nav a{font:500 14px/1 var(--f-body);text-decoration:none;color:var(--sage-light);padding-block:8px;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.nav a:hover{color:var(--paper);border-color:var(--gold)}
+.head-cta{padding:12px 22px;font-size:14px}
+.nav-toggle{display:none;background:none;border:1px solid var(--line-dark);border-radius:12px;width:46px;height:46px;cursor:pointer;padding:0;margin-left:auto;color:var(--paper)}
+.nav-toggle span{display:block;width:20px;height:1.5px;background:currentColor;margin:5px auto;transition:transform .3s var(--ease),opacity .3s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.nav-cta{display:none}

@@ -1,0 +1,7 @@
+/* Gaya khusus: cta. */
+.cta{background:radial-gradient(900px 420px at 15% 0%,rgba(20,84,63,.85),transparent 65%),var(--forest-950)}
+.cta-in{display:flex;flex-wrap:wrap;gap:32px 56px;justify-content:space-between;align-items:center}
+.cta h2{font-size:clamp(38px,5.6vw,76px);max-width:16ch}
+.cta h2 em{color:var(--gold)}
+.cta-side{display:grid;gap:18px;max-width:34ch}
+.cta-side p{color:var(--sage-light)}

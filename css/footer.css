@@ -1,0 +1,9 @@
+/* Gaya khusus: footer. */
+.foot{background:var(--forest-950);border-top:1px solid rgba(201,169,97,.4);padding-block:64px 28px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:40px}
+.foot p{color:var(--sage);font-size:14.5px;max-width:36ch;margin-top:16px}
+.foot h4{margin:0 0 16px;font:600 12px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.foot li{margin-bottom:10px;font-size:14.5px;color:var(--sage-light)}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--gold)}
+.foot-bar{margin-top:48px;padding-top:22px;border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:var(--sage)}

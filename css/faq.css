@@ -1,0 +1,9 @@
+/* Gaya khusus: faq. */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,88px);align-items:start}
+.faq details{border-bottom:1px solid var(--line-light)}
+.faq details:first-child{border-top:1px solid var(--line-light)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding-block:22px;cursor:pointer;font:500 clamp(21px,2.2vw,26px)/1.2 var(--f-display);color:var(--forest-900)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 30px/1 var(--f-body);color:var(--gold-deep);transition:transform .35s var(--ease);flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:24px;color:var(--ink-soft);max-width:60ch}

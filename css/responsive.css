@@ -1,0 +1,38 @@
+/* Breakpoint dan aksesibilitas gerak untuk semua section. */
+
+@media (max-width:1100px){
+  .nav-toggle{display:block}
+  .head-cta{display:none}
+  .nav{position:absolute;left:0;right:0;top:100%;margin:0;background:var(--forest-950);border-bottom:1px solid var(--line-dark);padding:10px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));display:none}
+  .nav[data-open]{display:block}
+  .nav ul{flex-direction:column;gap:0}
+  .nav li a{display:block;padding:16px 0;font-size:16px;border-bottom:1px solid var(--line-dark)}
+  .nav-cta{display:flex;margin-top:20px}
+}
+
+@media (max-width:900px){
+  .hero-grid,.about-grid,.faq-grid,.contact-grid,.design-types,.design-price{grid-template-columns:1fr}
+  .hero-art{max-width:430px}
+  .pol{left:-3%}
+  .strip-o{right:-3%}
+  .about-art{max-width:480px}
+  .cards3,.price-grid,.voices{grid-template-columns:1fr}
+  .feats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plan.best{transform:none}
+  .voice-panel{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid>:first-child{grid-column:1/-1}
+}
+
+@media (max-width:560px){
+  .feats,.steps,.values,.two{grid-template-columns:1fr}
+  .facts{grid-template-columns:repeat(2,auto)}
+  .hero h1{font-size:clamp(42px,13vw,60px)}
+  .cta-row .btn{flex:1 1 100%}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}

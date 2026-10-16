@@ -1,0 +1,20 @@
+/* Gaya khusus: contact. */
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:start}
+.info{margin-top:32px}
+.info li{display:flex;gap:18px;padding-block:20px;border-bottom:1px solid var(--line-light);align-items:flex-start}
+.info li:first-child{border-top:1px solid var(--line-light)}
+.info .ic{flex:none;width:44px;height:44px;border-radius:50%;background:var(--forest-900);color:var(--gold);font-size:20px}
+.info small{display:block;font:600 11px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:8px}
+.info .v{font-size:17px;color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.info a{color:var(--forest-900);font-weight:600}
+.copy{margin-left:10px;padding:6px 12px;border-radius:999px;border:1px solid var(--line-light);background:transparent;color:var(--forest-900);font:600 12px/1 var(--f-body);cursor:pointer}
+.copy:hover{background:var(--forest-900);color:var(--paper)}
+.form{background:var(--paper);border:1px solid var(--line-light);border-radius:24px;padding:clamp(24px,3.5vw,40px);display:grid;gap:18px;box-shadow:0 24px 50px rgba(11,61,46,.12)}
+.form h3{font-size:34px;color:var(--forest-900)}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font:600 13px/1 var(--f-body);color:var(--forest-900)}
+.field input,.field select,.field textarea{width:100%;min-width:0;padding:14px 16px;border:1px solid rgba(11,61,46,.3);border-radius:12px;background:#fff;color:var(--ink);font:400 16px/1.4 var(--f-body);color-scheme:light}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--forest-700);outline-offset:1px;border-color:var(--forest-700)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.form .note{font-size:13px;color:var(--ink-soft)}
